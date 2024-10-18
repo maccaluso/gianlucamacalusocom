@@ -4,6 +4,6 @@ export default function Header () {
   return <header className={styles.header}>
     <div>gianlucamacaluso.com</div>
 
-    <div>menu</div>
+    <div>menu x</div>
   </header>
 }
