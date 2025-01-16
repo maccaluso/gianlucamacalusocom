@@ -38,12 +38,26 @@ body {
 }
 
 a {
-  color: inherit;
+  color: violet;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.pageContainer {
+  z-index: 1;
+  width: 350px;
+  text-align: center;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

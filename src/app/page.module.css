@@ -43,13 +43,3 @@
     text-underline-offset: 4px;
   }
 } */
-
-.container {
-  text-align: center;
-  padding: 15px;
-  max-width: 375px;
-}
-
-.container a { color: var(--button-primary-color); }
-
-.container a:hover { color: var(--button-primary-hover); }

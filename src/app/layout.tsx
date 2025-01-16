@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+import Visualization from './components/Visualization'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   title: 'gianlucamacaluso.com',
@@ -16,9 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Visualization />
         <Header />
         {children}
-        {/* <footer>FOOTER</footer> */}
+        <Footer />
       </body>
     </html>
   )

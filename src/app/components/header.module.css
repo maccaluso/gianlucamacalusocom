@@ -6,4 +6,58 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  z-index: 10;
+}
+
+.menu .menuTrigger {
+  cursor: pointer;
+  color: white;
+}
+
+.menu .menuTrigger:hover {
+  color: violet;
+}
+
+.menu .menuLinks {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: black;
+  z-index: 10;
+}
+
+.menu .menuLinks .closeMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu .menuLinks .closeMenu:hover {
+  background-color: violet;
+}
+
+.menu .menuLinks ul {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.menu .menuLinks ul li {
+  padding: 3px 0;
+}
+
+.menu .menuLinks ul li a {
+  color: white;
+}
+
+.menu .menuLinks ul li a:hover {
+  color: violet;
 }
