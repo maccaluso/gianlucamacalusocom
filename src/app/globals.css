@@ -55,7 +55,7 @@ a:hover {
 .pageContainer {
   z-index: 1;
   width: 350px;
-  text-align: center;
+  /* text-align: center; */
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
