@@ -55,9 +55,29 @@ a:hover {
 .pageContainer {
   z-index: 1;
   width: 350px;
-  /* text-align: center; */
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+.pageContainer.contactPage {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 15px;
+}
+
+ul li {
+  padding: 3px 0;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  color: violet;
 }
