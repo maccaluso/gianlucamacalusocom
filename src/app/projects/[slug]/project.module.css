@@ -1,0 +1,19 @@
+.projectContainer {
+  z-index: 1;
+  padding: 15px 30px;
+}
+
+.projectContainer .projectData {
+  margin-bottom: 10px;
+  max-width: 75%;
+}
+.projectContainer img {
+  margin-bottom: 10px;
+}
+
+.projectContainer span {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: right;
+}

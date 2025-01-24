@@ -1,0 +1,43 @@
+import Image from 'next/image'
+import styles from './project.module.css'
+
+import { projects } from '../data'
+
+export default async function Project ({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const slug = (await params).slug
+  const project = projects.find(p => p.slug === slug)
+
+  return (
+    <div className={styles.projectContainer}>
+      <div className={styles.projectData}>
+        <h1>{project?.name} ({project?.year})</h1>
+        <p>{project?.description}</p>
+      </div>
+
+      {
+        project?.images.map((image, i) => 
+          <>
+            <Image
+              key={i}
+              src={'/projects/' + project.slug + '/' + image.fileName} 
+              alt={project.name + ' - ' + image.alt}
+              layout="responsive"
+              objectFit="contain"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+            />
+
+            { image.caption && <span>{image.caption}</span> }
+            { !image.caption && <span>{project.name + ' - ' + image.alt}</span> }
+          </>
+        )
+      } 
+    </div>
+  )
+}

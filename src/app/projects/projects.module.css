@@ -1,0 +1,70 @@
+.projectsContainer {
+  max-width: 100vw;
+  z-index: 1;
+}
+
+.projectLine {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  padding-left: 15px;
+  font-size: 10rem;
+  white-space: nowrap;
+  background-position: 50%;
+  color: white;
+}
+
+.projectLine:hover .lineBackground {
+  height: 150px;
+  width: 100%;
+}
+
+.projectLine:hover .projectName {
+  transform: scale(0.15);
+  background: black;
+  color: white;
+}
+
+.projectLine:hover .projectName .projectYear {
+  display: initial;
+}
+
+.projectLine:hover .projectDescription {
+  opacity: 1;
+}
+
+.projectLine .lineBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectLine .projectName {
+  display: inline-block;
+  height: 100%;
+  transform-origin: bottom left;
+
+  color: white;
+
+  transition: transform .1s ease-out;
+}
+
+.projectLine .projectName .projectYear {
+  display: none;
+}
+
+.projectLine .projectDescription {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: initial;
+  max-width: 75%;
+  white-space: initial;
+  background: black;
+  color: white;
+
+  transition: opacity .15s ease-out;
+}
