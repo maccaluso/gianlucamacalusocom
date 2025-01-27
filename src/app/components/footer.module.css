@@ -9,3 +9,17 @@
 
   z-index: 10;
 }
+
+.nameAbbreviation { display: none; }
+.extendedName { display: initial; }
+
+.textMailLink { display: initial }
+.iconMailLink { display: none; }
+
+@media only screen and (max-width: 600px) {
+  .nameAbbreviation { display: initial; }
+  .extendedName { display: none; }
+
+  .textMailLink { display: none }
+  .iconMailLink { display: initial; }
+}
