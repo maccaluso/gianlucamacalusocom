@@ -18,10 +18,19 @@ export default async function Project ({
         <p>{project?.description}</p>
 
         <div className={styles.projectSkills}>
-          Skills: 
+          Skills:&nbsp;
           {
             project?.skills.map((skill, i) =>
               <span className={styles.projectSkill} key={i}>{skill}</span>
+            )
+          }
+        </div>
+
+        <div className={styles.projectMates}>
+          Mates:&nbsp;
+          {
+            project?.mates.map((mate, i) =>
+              <span className={styles.projectMate} key={i}>{mate.name + '(' + mate.role + ')'}</span>
             )
           }
         </div>

@@ -16,17 +16,25 @@
   display: initial;
   margin-bottom: initial;
   text-align: initial;
-  padding: initial;
-
+  
   background-color: white;
   color: black;
+  margin-right: 3px;
+  border-radius: 2px;
+  padding: 0 3px;
+}
+
+.projectContainer .projectData .projectMate {
+  display: initial;
+  margin-bottom: initial;
+  text-align: initial;
+  
   margin-right: 3px;
 }
 
 .projectContainer .projectImageContainer {
   position: relative;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
 .projectContainer .projectImageContainer::before,
