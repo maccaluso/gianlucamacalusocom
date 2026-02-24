@@ -203,7 +203,7 @@ export const projects:project[] = [
     skills: ['frontend dev'],
     mates: [
       { name: 'Francesco Bagni', role: 'UI/UX Lead' },
-      { name: '---', role: 'Art direction' }
+      { name: 'Malica Worms', role: 'Art direction' }
     ]
   },
   {
@@ -243,7 +243,7 @@ export const projects:project[] = [
     skills: ['frontend dev', 'backend architecture'],
     mates: [
       { name: 'Francesco Bagni', role: 'UI/UX Lead' },
-      { name: '---', role: 'Art direction' }
+      { name: 'Malica Worms', role: 'Art direction' }
     ]
   }
 ]

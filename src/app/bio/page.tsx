@@ -22,7 +22,7 @@ export default function Bio () {
       </p>
       <br />
       <p>
-        If you&apos;re interested you can download my CV <Link href="/CV-Gianluca-Macaluso.pdf" target="_blank" rel="noopener noreferrer" locale={false}>here</Link>
+        If you&apos;re interested you can download my CV <Link href="/CV-Gianluca-Macaluso.pdf" target="_blank" rel="noopener noreferrer" locale="false">here</Link>
       </p>
     </div>
   )

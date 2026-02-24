@@ -38,8 +38,8 @@ export default async function Project ({
 
       {
         project?.images.map((image, i) => 
-          <>
-            <div className={styles.projectImageContainer}>
+          // <>
+            <div className={styles.projectImageContainer} key={'image' + i}>
               <Image
                 key={i}
                 src={'/projects/' + project.slug + '/' + image.fileName}
@@ -51,11 +51,11 @@ export default async function Project ({
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
               />
-            </div>
 
-            { image.caption && <span>{image.caption}</span> }
-            { !image.caption && <span>{project.name + ' - ' + image.alt}</span> }
-          </>
+              { image.caption && <span>{image.caption}</span> }
+              { !image.caption && <span>{project.name + ' - ' + image.alt}</span> }
+            </div>
+          // </>
         )
       } 
     </div>
