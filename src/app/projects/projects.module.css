@@ -23,29 +23,6 @@
   }
 }
 
-.projectLine .projectName::before,
-.projectLine .projectName::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-image: url('/corner.png');
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-  z-index: 2;
-}
-
-.projectLine .projectName::before {
-  top: 18px;
-  left: -5px;
-}
-
-.projectLine .projectName::after {
-  bottom: 23px;
-  right: -5px;
-  transform: rotateZ(180deg);
-}
-
 .projectLine:hover .lineBackground {
   height: 150px;
   width: 100%;

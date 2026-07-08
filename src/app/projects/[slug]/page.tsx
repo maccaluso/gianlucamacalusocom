@@ -44,12 +44,10 @@ export default async function Project ({
                 key={i}
                 src={'/projects-webp/' + project.slug + '/' + image.fileName}
                 alt={project.name + ' - ' + image.alt}
-                layout="responsive"
-                objectFit="contain"
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
               />
 
               { image.caption && <span>{image.caption}</span> }

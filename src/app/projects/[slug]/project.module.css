@@ -33,31 +33,9 @@
 }
 
 .projectContainer .projectImageContainer {
-  position: relative;
-  padding: 10px;
-}
-
-.projectContainer .projectImageContainer::before,
-.projectContainer .projectImageContainer::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-image: url('/corner.png');
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-  z-index: 2;
-}
-
-.projectContainer .projectImageContainer::before {
-  top: 0;
-  left: 0;
-}
-
-.projectContainer .projectImageContainer::after {
-  bottom: 0;
-  right: 0;
-  transform: rotateZ(180deg);
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .projectContainer span {
@@ -65,5 +43,9 @@
   margin-bottom: 30px;
   width: 100%;
   text-align: right;
-  padding-right: 5px;
+}
+
+.projectContainer .projectImageContainer span {
+  margin-top: 2px;
+  margin-bottom: 10px;
 }
