@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './project.module.css'
 
 import { projects } from '../data'
@@ -55,7 +56,12 @@ export default async function Project ({
             </div>
           // </>
         )
-      } 
+      }
+
+      <Link href="/projects" className={styles.backButton}>
+        <i className={styles.backIcon} />
+        back
+      </Link>
     </div>
   )
 }

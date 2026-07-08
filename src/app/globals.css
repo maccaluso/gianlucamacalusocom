@@ -28,10 +28,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  grid-template-rows: 1fr 20px;
   align-items: start;
   justify-items: center;
   min-height: 100svh;
+  padding-top: 20px;
 }
 
 * {

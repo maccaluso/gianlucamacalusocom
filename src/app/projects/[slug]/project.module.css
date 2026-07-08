@@ -49,3 +49,38 @@
   margin-top: 2px;
   margin-bottom: 10px;
 }
+
+.backButton {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 20px;
+  padding: 0 8px;
+
+  background: black;
+  color: white;
+}
+
+.backButton:hover {
+  color: violet;
+}
+
+.backIcon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANElEQVR4nGNgoBT8////PzKfiRhFWBViU4ShEJciFIX4FKEoZGRkZCRKISHFGJ4hZDJBAAD4GBQH72cyPQAAAABJRU5ErkJggg==");
+  mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANElEQVR4nGNgoBT8////PzKfiRhFWBViU4ShEJciFIX4FKEoZGRkZCRKISHFGJ4hZDJBAAD4GBQH72cyPQAAAABJRU5ErkJggg==");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
