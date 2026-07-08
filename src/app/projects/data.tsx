@@ -32,12 +32,12 @@ export const projects:project[] = [
       It featured also a custom made International Store locator base on Google Maps© functionalities and apis.
     `,
     year: '2014',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'home.jpeg', caption: 'Home page with its widgets', alt: 'Home page' },
-      { fileName: 'blog-roll.jpeg', caption: 'The website blog roll', alt: 'Blog roll' },
-      { fileName: 'single-post.jpeg', caption: 'Single post page template', alt: 'Single post'  },
-      { fileName: 'store-locator.jpeg', caption: 'Custom store locator based on Google Maps©', alt: 'Store locator'  }
+      { fileName: 'home.webp', caption: 'Home page with its widgets', alt: 'Home page' },
+      { fileName: 'blog-roll.webp', caption: 'The website blog roll', alt: 'Blog roll' },
+      { fileName: 'single-post.webp', caption: 'Single post page template', alt: 'Single post'  },
+      { fileName: 'store-locator.webp', caption: 'Custom store locator based on Google Maps©', alt: 'Store locator'  }
     ],
     skills: ['art direction', 'UI/UX', 'frontend dev', 'backend dev'],
     mates: [
@@ -55,13 +55,13 @@ export const projects:project[] = [
       It was also possible to configure and cache user based queries and provide useful up-sells and cross-sells hints at checkout.
     `,
     year: '2015',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'home.jpeg', caption: '', alt: 'Home page' },
-      { fileName: 'carrello.jpeg', caption: 'Cart page with up sells and cross sells', alt: 'Cart' },
-      { fileName: 'checkout.jpeg', caption: '', alt: 'Checkout' },
-      { fileName: 'scheda-modello.jpeg', caption: '', alt: 'Model page'  },
-      { fileName: 'scheda-prodotto.jpeg', caption: '', alt: 'Product page'  }
+      { fileName: 'home.webp', caption: '', alt: 'Home page' },
+      { fileName: 'carrello.webp', caption: 'Cart page with up sells and cross sells', alt: 'Cart' },
+      { fileName: 'checkout.webp', caption: '', alt: 'Checkout' },
+      { fileName: 'scheda-modello.webp', caption: '', alt: 'Model page'  },
+      { fileName: 'scheda-prodotto.webp', caption: '', alt: 'Product page'  }
     ],
     skills: ['art direction', 'UI/UX', 'frontend dev'],
     mates: [
@@ -79,13 +79,13 @@ export const projects:project[] = [
       prsonalized documentation knowledge base. It uses the same tech stack of B2C eCommerce platform.
     `,
     year: '2016',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'Family-Index.jpeg', caption: '', alt: 'Family index' },
-      { fileName: 'FileIn.jpeg', caption: '', alt: 'File in' },
-      { fileName: 'modello-list.jpeg', caption: '', alt: 'Model list'  },
-      { fileName: 'Product-Index.jpeg', caption: '', alt: 'Product index'  },
-      { fileName: 'Stat-Clienti.jpeg', caption: '', alt: 'Client stats'  }
+      { fileName: 'Family-Index.webp', caption: '', alt: 'Family index' },
+      { fileName: 'FileIn.webp', caption: '', alt: 'File in' },
+      { fileName: 'modello-list.webp', caption: '', alt: 'Model list'  },
+      { fileName: 'Product-Index.webp', caption: '', alt: 'Product index'  },
+      { fileName: 'Stat-Clienti.webp', caption: '', alt: 'Client stats'  }
     ],
     skills: ['art direction', 'UI/UX', 'frontend dev'],
     mates: [
@@ -105,17 +105,17 @@ export const projects:project[] = [
       For the project I designed the UI, developed the UX and coded the frontend in Angular.
     `,
     year: '2016',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'add-book-form.jpeg', caption: '', alt: 'Add book form' },
-      { fileName: 'author-profile.jpeg', caption: '', alt: 'Author profile' },
-      { fileName: 'book-card.jpeg', caption: '', alt: 'Book card'  },
-      { fileName: 'book-places-1.jpeg', caption: '', alt: 'Book places 1'  },
-      { fileName: 'book-places-2.jpeg', caption: '', alt: 'Book places 2'  },
-      { fileName: 'book-places-3.jpeg', caption: '', alt: 'Book places 3'  },
-      { fileName: 'book-places-intro-1.jpeg', caption: '', alt: 'Book places intro 1'  },
-      { fileName: 'book-places-intro-2.jpeg', caption: '', alt: 'Book places intro 2'  },
-      { fileName: 'user-profile.jpeg', caption: '', alt: 'User profile'  },
+      { fileName: 'add-book-form.webp', caption: '', alt: 'Add book form' },
+      { fileName: 'author-profile.webp', caption: '', alt: 'Author profile' },
+      { fileName: 'book-card.webp', caption: '', alt: 'Book card'  },
+      { fileName: 'book-places-1.webp', caption: '', alt: 'Book places 1'  },
+      { fileName: 'book-places-2.webp', caption: '', alt: 'Book places 2'  },
+      { fileName: 'book-places-3.webp', caption: '', alt: 'Book places 3'  },
+      { fileName: 'book-places-intro-1.webp', caption: '', alt: 'Book places intro 1'  },
+      { fileName: 'book-places-intro-2.webp', caption: '', alt: 'Book places intro 2'  },
+      { fileName: 'user-profile.webp', caption: '', alt: 'User profile'  },
     ],
     skills: ['art direction', 'UI/UX', 'frontend dev'],
     mates: [
@@ -134,19 +134,19 @@ export const projects:project[] = [
       a custom platform game for kids called "Michi, the ice cream maker" with the collaboration of Roberto Fazio and Sara Colaone.  
     `,
     year: '2017',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'virtual-ice-cream-machine.jpeg', caption: '', alt: 'Virtual ice cream machine' },
-      { fileName: 'rotary-table-app.jpeg', caption: '', alt: 'Rotary table app' },
-      { fileName: 'wall-screen-app.jpeg', caption: '', alt: 'Wall screen app'  },
-      { fileName: 'ipad-stands-1.jpeg', caption: '', alt: 'Ipad stands 1'  },
-      { fileName: 'ipad-stands-2.jpeg', caption: '', alt: 'Ipad stands 2'  },
-      { fileName: 'michi-welcome-screen.jpeg', caption: '', alt: 'Michi - Welcome screen'  },
-      { fileName: 'michi-level-one.jpeg', caption: '', alt: 'Michi - Level one'  },
-      { fileName: 'michi-level-two.jpeg', caption: '', alt: 'Michi - Level two'  },
-      { fileName: 'michi-level-three.jpeg', caption: '', alt: 'Michi - Level three'  },
-      { fileName: 'michi-game-options.jpeg', caption: '', alt: 'Michi - Game options'  },
-      { fileName: 'michi-victory-screen.jpeg', caption: '', alt: 'Michi - Victory screen'  }
+      { fileName: 'virtual-ice-cream-machine.webp', caption: '', alt: 'Virtual ice cream machine' },
+      { fileName: 'rotary-table-app.webp', caption: '', alt: 'Rotary table app' },
+      { fileName: 'wall-screen-app.webp', caption: '', alt: 'Wall screen app'  },
+      { fileName: 'ipad-stands-1.webp', caption: '', alt: 'Ipad stands 1'  },
+      { fileName: 'ipad-stands-2.webp', caption: '', alt: 'Ipad stands 2'  },
+      { fileName: 'michi-welcome-screen.webp', caption: '', alt: 'Michi - Welcome screen'  },
+      { fileName: 'michi-level-one.webp', caption: '', alt: 'Michi - Level one'  },
+      { fileName: 'michi-level-two.webp', caption: '', alt: 'Michi - Level two'  },
+      { fileName: 'michi-level-three.webp', caption: '', alt: 'Michi - Level three'  },
+      { fileName: 'michi-game-options.webp', caption: '', alt: 'Michi - Game options'  },
+      { fileName: 'michi-victory-screen.webp', caption: '', alt: 'Michi - Victory screen'  }
     ],
     skills: ['interaction desing', 'exhibit design', 'game design', 'coding'],
     mates: [
@@ -166,11 +166,11 @@ export const projects:project[] = [
       presence tracking making use of real time data coming from a network of MS Kinect and the OpenCV library.
     `,
     year: '2017',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'waterfall-1.jpeg', caption: '', alt: 'Waterfall 1' },
-      { fileName: 'waterfall-2.jpeg', caption: '', alt: 'Waterfall 2' },
-      { fileName: 'waterfall-3.jpeg', caption: '', alt: 'Waterfall 3'  }
+      { fileName: 'waterfall-1.webp', caption: '', alt: 'Waterfall 1' },
+      { fileName: 'waterfall-2.webp', caption: '', alt: 'Waterfall 2' },
+      { fileName: 'waterfall-3.webp', caption: '', alt: 'Waterfall 3'  }
     ],
     skills: ['art direction', 'interaction design', 'creative coding'],
     mates: [
@@ -191,14 +191,14 @@ export const projects:project[] = [
       For the project I developed and coded a completely "Vanilla Javascript" web application and the Mapbox.js© custom style it uses.
     `,
     year: '2018',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'interactive-map.jpeg', caption: '', alt: 'Interactive map' },
-      { fileName: 'comuni-vetto.jpeg', caption: '', alt: 'Towns: Vetto' },
-      { fileName: 'cronologia-e-personaggi.jpeg', caption: '', alt: 'History and characters'  },
-      { fileName: 'episodi-casa-di-pasquale-marconi.jpeg', caption: '', alt: 'Episodes: Pasquale Marconi\'s house'  },
-      { fileName: 'tracce-1.jpeg', caption: '', alt: 'Marks 1'  },
-      { fileName: 'tracce-2.jpeg', caption: '', alt: 'Marks 2'  }
+      { fileName: 'interactive-map.webp', caption: '', alt: 'Interactive map' },
+      { fileName: 'comuni-vetto.webp', caption: '', alt: 'Towns: Vetto' },
+      { fileName: 'cronologia-e-personaggi.webp', caption: '', alt: 'History and characters'  },
+      { fileName: 'episodi-casa-di-pasquale-marconi.webp', caption: '', alt: 'Episodes: Pasquale Marconi\'s house'  },
+      { fileName: 'tracce-1.webp', caption: '', alt: 'Marks 1'  },
+      { fileName: 'tracce-2.webp', caption: '', alt: 'Marks 2'  }
     ],
     skills: ['frontend dev'],
     mates: [
@@ -219,26 +219,26 @@ export const projects:project[] = [
       The websites were written in Vanilla Javascript.
     `,
     year: '2018',
-    cover: 'cover.jpeg',
+    cover: 'cover.webp',
     images: [
-      { fileName: 'bestpractices-1.jpeg', caption: '', alt: 'Best practices 1' },
-      { fileName: 'bestpractices-2.jpeg', caption: '', alt: 'Best practices 2' },
-      { fileName: 'bestpractices-about-page.jpeg', caption: '', alt: 'Best practices: About page' },
-      { fileName: 'bestpractices-longform-story.jpeg', caption: '', alt: 'Best practices: Longform story' },
-      { fileName: 'cooperation-1.jpeg', caption: '', alt: 'What is international cooperation 1' },
-      { fileName: 'cooperation-3.jpeg', caption: '', alt: 'What is international cooperation 2' },
-      { fileName: 'cooperation-1.jpeg', caption: '', alt: 'What is international cooperation 3' },
-      { fileName: 'ideastomove-eu-have-your-say-1.jpeg', caption: '', alt: 'Ideas to move: Have your say 1'  },
-      { fileName: 'ideastomove-eu-have-your-say-2.jpeg', caption: '', alt: 'Ideas to move: Have your say 2'  },
-      { fileName: 'ideastomove-eu-keyword-discriminazione.jpeg', caption: '', alt: 'Ideas to move: Discrimination keyword'  },
-      { fileName: 'ideastomove-eu-keyword-felicita.jpeg', caption: '', alt: 'Ideas to move: Happiness keyword'  },
-      { fileName: 'ideastomove-eu-keyword-francia-coloniale-1.jpeg', caption: '', alt: 'Ideas to move: Imperial France keyword 1'  },
-      { fileName: 'ideastomove-eu-keyword-francia-coloniale-2.jpeg', caption: '', alt: 'Ideas to move: Imperial France keyword 2'  },
-      { fileName: 'ideastomove-eu-profile.jpeg', caption: '', alt: 'Ideas to move: Profile'  },
-      { fileName: 'ideastomove-eu-stories.jpeg', caption: '', alt: 'Ideas to move: Stories'  },
-      { fileName: 'ideastomove-eu-story-denti-piu-bianchi-1.jpeg', caption: '', alt: 'Ideas to move: Whiter teeth story 1'  },
-      { fileName: 'ideastomove-eu-story-denti-piu-bianchi-2.jpeg', caption: '', alt: 'Ideas to move: Whiter teeth story 2'  },
-      { fileName: 'ideastomove-eu.jpeg', caption: '', alt: 'Ideas to move'  },
+      { fileName: 'bestpractices-1.webp', caption: '', alt: 'Best practices 1' },
+      { fileName: 'bestpractices-2.webp', caption: '', alt: 'Best practices 2' },
+      { fileName: 'bestpractices-about-page.webp', caption: '', alt: 'Best practices: About page' },
+      { fileName: 'bestpractices-longform-story.webp', caption: '', alt: 'Best practices: Longform story' },
+      { fileName: 'cooperation-1.webp', caption: '', alt: 'What is international cooperation 1' },
+      { fileName: 'cooperation-3.webp', caption: '', alt: 'What is international cooperation 2' },
+      { fileName: 'cooperation-1.webp', caption: '', alt: 'What is international cooperation 3' },
+      { fileName: 'ideastomove-eu-have-your-say-1.webp', caption: '', alt: 'Ideas to move: Have your say 1'  },
+      { fileName: 'ideastomove-eu-have-your-say-2.webp', caption: '', alt: 'Ideas to move: Have your say 2'  },
+      { fileName: 'ideastomove-eu-keyword-discriminazione.webp', caption: '', alt: 'Ideas to move: Discrimination keyword'  },
+      { fileName: 'ideastomove-eu-keyword-felicita.webp', caption: '', alt: 'Ideas to move: Happiness keyword'  },
+      { fileName: 'ideastomove-eu-keyword-francia-coloniale-1.webp', caption: '', alt: 'Ideas to move: Imperial France keyword 1'  },
+      { fileName: 'ideastomove-eu-keyword-francia-coloniale-2.webp', caption: '', alt: 'Ideas to move: Imperial France keyword 2'  },
+      { fileName: 'ideastomove-eu-profile.webp', caption: '', alt: 'Ideas to move: Profile'  },
+      { fileName: 'ideastomove-eu-stories.webp', caption: '', alt: 'Ideas to move: Stories'  },
+      { fileName: 'ideastomove-eu-story-denti-piu-bianchi-1.webp', caption: '', alt: 'Ideas to move: Whiter teeth story 1'  },
+      { fileName: 'ideastomove-eu-story-denti-piu-bianchi-2.webp', caption: '', alt: 'Ideas to move: Whiter teeth story 2'  },
+      { fileName: 'ideastomove-eu.webp', caption: '', alt: 'Ideas to move'  },
     ],
     skills: ['frontend dev', 'backend architecture'],
     mates: [

@@ -6,7 +6,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #green;
+    --foreground: #ededed;
   }
 }
 
@@ -29,7 +29,7 @@ body {
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
-  align-items: center;
+  align-items: start;
   justify-items: center;
   min-height: 100svh;
 }

@@ -42,7 +42,7 @@ export default async function Project ({
             <div className={styles.projectImageContainer} key={'image' + i}>
               <Image
                 key={i}
-                src={'/projects/' + project.slug + '/' + image.fileName}
+                src={'/projects-webp/' + project.slug + '/' + image.fileName}
                 alt={project.name + ' - ' + image.alt}
                 layout="responsive"
                 objectFit="contain"
