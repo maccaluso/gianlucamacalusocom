@@ -17,6 +17,13 @@ function Menu () {
     setShowMenu(false)
   }, [pathname])
 
+  const links = [
+    { href: '/', label: 'home' },
+    { href: '/projects', label: 'projects' },
+    { href: '/bio', label: 'bio' },
+    { href: '/contacts', label: 'contacts' }
+  ]
+
   return <div className={styles.menu}>
     <a className={styles.menuTrigger} onClick={() => setShowMenu(true)}>menu</a>
 
@@ -24,10 +31,23 @@ function Menu () {
       <a className={styles.closeMenu} onClick={() => setShowMenu(false)}>X</a>
 
       <ul>
-        <li><Link href="/">home</Link></li>
-        <li><Link href="/projects">projects</Link></li>
-        <li><Link href="/bio">bio</Link></li>
-        <li><Link href="/contacts">contacts</Link></li>
+        {
+          links.map(link => {
+            const isActive = link.href === '/'
+              ? pathname === '/'
+              : pathname.startsWith(link.href)
+
+            return <li key={link.href}>
+              <Link
+                href={link.href}
+                data-text={link.label}
+                className={isActive ? styles.activeLink : undefined}
+              >
+                {link.label}
+              </Link>
+            </li>
+          })
+        }
       </ul>
     </div>}
   </div>
