@@ -5,7 +5,7 @@ export default function Contacts () {
     <div className={'pageContainer contactPage'}>
       <ul>
         <li>
-          <Link href="https://www.linkedin.com/in/maccaluso/">Linkedin</Link>
+          <Link href="https://www.linkedin.com/in/maccaluso/" target="_blank" rel="noopener noreferrer">Linkedin</Link>
         </li>
 
         <li>
