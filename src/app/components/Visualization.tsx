@@ -2,11 +2,20 @@
 
 import * as THREE from 'three'
 import { useRef, useMemo } from 'react'
-import { Canvas, extend, useFrame, useLoader } from '@react-three/fiber'
+import { Canvas, extend, useFrame, useLoader, ThreeElement } from '@react-three/fiber'
 import { Effects } from '@react-three/drei'
 import { FilmPass, WaterPass, UnrealBloomPass, LUTPass, LUTCubeLoader } from 'three-stdlib'
 
 extend({ WaterPass, UnrealBloomPass, FilmPass, LUTPass })
+
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    waterPass: ThreeElement<typeof WaterPass>
+    unrealBloomPass: ThreeElement<typeof UnrealBloomPass>
+    filmPass: ThreeElement<typeof FilmPass>
+    lUTPass: ThreeElement<typeof LUTPass>
+  }
+}
 
 import styles from './visualization.module.css'
 
@@ -42,9 +51,9 @@ export default function Visualization () {
   </div>
 }
 
-function Swarm({ count, dummy = new THREE.Object3D() }) {
-  const mesh = useRef(null)
-  const light = useRef(null)
+function Swarm({ count, dummy = new THREE.Object3D() }: { count: number; dummy?: THREE.Object3D }) {
+  const mesh = useRef<THREE.InstancedMesh>(null)
+  const light = useRef<THREE.PointLight>(null)
 
   const particles = useMemo(() => {
     const temp = []
@@ -80,7 +89,7 @@ function Swarm({ count, dummy = new THREE.Object3D() }) {
       dummy.updateMatrix()
       mesh.current?.setMatrixAt(i, dummy.matrix)
     })
-    mesh.current.instanceMatrix.needsUpdate = true
+    if (mesh.current) mesh.current.instanceMatrix.needsUpdate = true
   })
 
   return (
@@ -91,7 +100,7 @@ function Swarm({ count, dummy = new THREE.Object3D() }) {
         </mesh>
       </pointLight>
       
-      <instancedMesh ref={mesh} args={[null, null, count]}>
+      <instancedMesh ref={mesh} args={[undefined, undefined, count]}>
         <dodecahedronGeometry args={[1, 0]} />
         <meshStandardMaterial color="#020000" roughness={0.5} />
       </instancedMesh>
@@ -100,13 +109,15 @@ function Swarm({ count, dummy = new THREE.Object3D() }) {
 }
 
 function Postpro() {
-  const water = useRef(null)
+  const water = useRef<WaterPass>(null)
   // const data = useLoader(LUTCubeLoader, '/cubicle.CUBE')
-  useFrame((state) => (water.current.time = state.clock.elapsedTime * 4))
+  useFrame((state) => {
+    if (water.current) water.current.time = state.clock.elapsedTime * 4
+  })
   return (
     <Effects disableGamma>
       <waterPass ref={water} factor={1} />
-      <unrealBloomPass args={[undefined, 1.25, 1, 0]} />
+      <unrealBloomPass args={[new THREE.Vector2(256, 256), 1.25, 1, 0]} />
       <filmPass args={[0.2, 0.5, 1500, false]} />
       {/* <lUTPass lut={data.texture} intensity={0.75} /> */}
     </Effects>
