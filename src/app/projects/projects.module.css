@@ -29,6 +29,7 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: glitchShake 0.3s infinite steps(2, end);
 }
 
 .projectLine:hover .projectName {
@@ -53,6 +54,32 @@
   left: 0;
 }
 
+.projectLine:hover .lineBackground::before,
+.projectLine:hover .lineBackground::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--cover);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.projectLine:hover .lineBackground::before {
+  filter: hue-rotate(-60deg) saturate(5) contrast(1.4) brightness(1.15);
+  animation: glitchTop 0.35s infinite steps(4, end);
+}
+
+.projectLine:hover .lineBackground::after {
+  filter: hue-rotate(160deg) saturate(5) contrast(1.4) brightness(1.15);
+  animation: glitchBottom 0.4s infinite steps(4, end);
+}
+
 .projectLine .projectName {
   position: relative;
   display: inline-block;
@@ -66,6 +93,58 @@
 
 .projectLine .projectName .projectYear {
   display: none;
+}
+
+.projectLine:hover .projectName::before,
+.projectLine:hover .projectName::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.projectLine:hover .projectName::before {
+  color: #0ff;
+  animation: glitchTop 0.35s infinite steps(4, end);
+}
+
+.projectLine:hover .projectName::after {
+  color: #f0f;
+  animation: glitchBottom 0.4s infinite steps(4, end);
+}
+
+@keyframes glitchTop {
+  0% { clip-path: inset(0 0 85% 0); transform: translate(-10px, -3px); }
+  15% { clip-path: inset(15% 0 65% 0); transform: translate(12px, 2px); }
+  30% { clip-path: inset(5% 0 80% 0); transform: translate(-14px, 4px); }
+  45% { clip-path: inset(40% 0 40% 0); transform: translate(8px, -4px); }
+  60% { clip-path: inset(70% 0 15% 0); transform: translate(-12px, -2px); }
+  75% { clip-path: inset(25% 0 55% 0); transform: translate(14px, 3px); }
+  90% { clip-path: inset(60% 0 25% 0); transform: translate(-8px, 5px); }
+  100% { clip-path: inset(0 0 85% 0); transform: translate(10px, -3px); }
+}
+
+@keyframes glitchBottom {
+  0% { clip-path: inset(85% 0 0 0); transform: translate(10px, 3px); }
+  15% { clip-path: inset(65% 0 15% 0); transform: translate(-12px, -2px); }
+  30% { clip-path: inset(80% 0 5% 0); transform: translate(14px, -4px); }
+  45% { clip-path: inset(40% 0 40% 0); transform: translate(-8px, 4px); }
+  60% { clip-path: inset(15% 0 70% 0); transform: translate(12px, 2px); }
+  75% { clip-path: inset(55% 0 25% 0); transform: translate(-14px, -3px); }
+  90% { clip-path: inset(25% 0 60% 0); transform: translate(8px, -5px); }
+  100% { clip-path: inset(85% 0 0 0); transform: translate(-10px, 3px); }
+}
+
+@keyframes glitchShake {
+  0% { transform: translate(0, 0) skewX(0deg); }
+  20% { transform: translate(-5px, 3px) skewX(3deg); }
+  40% { transform: translate(5px, -3px) skewX(-4deg); }
+  60% { transform: translate(-4px, -4px) skewX(2deg); }
+  80% { transform: translate(4px, 4px) skewX(-3deg); }
+  100% { transform: translate(0, 0) skewX(0deg); }
 }
 
 .projectLine .projectDescription {
