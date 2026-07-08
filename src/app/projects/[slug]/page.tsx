@@ -47,7 +47,7 @@ export default async function Project ({
                 alt={project.name + ' - ' + image.alt}
                 width={0}
                 height={0}
-                sizes="100vw"
+                unoptimized
                 style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
               />
 
