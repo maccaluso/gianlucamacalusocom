@@ -17,10 +17,10 @@ declare module '@react-three/fiber' {
   }
 }
 
-import styles from './visualization.module.css'
+import styles from './futuristicHud.module.css'
 
-export default function Visualization () {
-  return <div className={styles.visualizationContainer}>
+export default function FuturisticHUD () {
+  return <div className={styles.hudContainer}>
     {/* <Canvas>
       <color attach="background" args={['#131313']} />
       <ambientLight intensity={2} />

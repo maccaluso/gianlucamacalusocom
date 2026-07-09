@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-import Visualization from './components/Visualization'
+import Background from './components/backgrounds'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Visualization />
+        <Background />
         <Header />
         {children}
         <Footer />
