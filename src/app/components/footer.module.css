@@ -10,13 +10,39 @@
   z-index: 10;
 }
 
+.footerLine {
+  display: contents;
+}
+
 .nameAbbreviation { display: none; }
 .extendedName { display: initial; }
 
 .textMailLink { display: initial }
 .iconMailLink { display: none; }
 
+.fontSizeLink {
+  cursor: pointer;
+  font-weight: bold;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 @media only screen and (max-width: 600px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    padding: 4px 5px;
+  }
+
+  .footerLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   .nameAbbreviation { display: initial; }
   .extendedName { display: none; }
 

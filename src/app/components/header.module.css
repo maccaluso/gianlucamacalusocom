@@ -4,8 +4,9 @@
   left: 0;
   width: 100vw;
   height: 20px;
-  padding: 0 30px;
+  padding: 2px 30px;
   background: black;
+  border-bottom: 1px solid #333;
 
   display: flex;
   align-items: center;
