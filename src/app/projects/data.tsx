@@ -245,5 +245,39 @@ export const projects:project[] = [
       { name: 'Francesco Bagni', role: 'UI/UX Lead' },
       { name: 'Malica Worms', role: 'Art direction' }
     ]
+  },
+  {
+    id: 9,
+    name: 'Crafter.ai',
+    slug: '09-crafter-ai',
+    description: `
+      Crafter.ai is a no-code platform, built by Athics, for building, training and deploying AI powered chatbots.
+      Users can teach a bot through document uploads, Q&A pairs and a visual flow designer, keep an eye on misses
+      and conflicts to sharpen its knowledge base, and track performance through a full analytics dashboard with
+      conversations, misses, handovers and Sankey flows. Published bots can be embedded on any website with a
+      simple script tag, or connected to Telegram, WhatsApp, Facebook and Microsoft Teams.
+      I designed the UI/UX and coded the frontend of the whole product.
+    `,
+    year: '2019-2023',
+    cover: 'insights-analytics.webp',
+    images: [
+      { fileName: 'setup-tutorial.webp', caption: '', alt: 'Chatbot setup' },
+      { fileName: 'setup-additional-features.webp', caption: '', alt: 'Setup: Additional features' },
+      { fileName: 'setup-connectors.webp', caption: '', alt: 'Setup: Connectors' },
+      { fileName: 'knowledge-base.webp', caption: '', alt: 'Knowledge base' },
+      { fileName: 'knowledge-base-misses.webp', caption: '', alt: 'Knowledge base: Misses & conflicts' },
+      { fileName: 'flow-designer.webp', caption: '', alt: 'Flow designer' },
+      { fileName: 'flow-designer-actions.webp', caption: '', alt: 'Flow designer: Actions' },
+      { fileName: 'chatroom-customization.webp', caption: '', alt: 'Chatroom customization' },
+      { fileName: 'deploy-published.webp', caption: '', alt: 'Deploy' },
+      { fileName: 'insights-analytics.webp', caption: '', alt: 'Insights: Analytics' },
+      { fileName: 'insights-reports-export.webp', caption: '', alt: 'Insights: Reports export' }
+    ],
+    skills: ['UI/UX', 'frontend dev'],
+    mates: [
+      { name: 'Stefano Somenzi', role: 'CEO' },
+      { name: 'Enrico Gambi', role: 'NLU, AI & DevOps' },
+      { name: 'Danilo Belardinelli', role: 'Backend dev & DevOps' }
+    ]
   }
 ]
